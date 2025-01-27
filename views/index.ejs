@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/add-note.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header__nav">
+        <ul class="main-header__list">
+          <li class="main-header__list-item">
+            <a class="active" href="#">Add notes</a>
+          </li>
+          <li class="main-header__list-item"><a href="#">View notes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="/add-note" method="POST" id="form" class="form">
+        <div class="form-control">
+          <label for="day">Day :</label>
+          <select name="day" id="day">
+            <option selected>Choose an option</option>
+            <option value="Clean">Clean</option>
+            <option value="not-clean">Not Clean</option>
+          </select>
+        </div>
+
+        <div class="form-control cause" id="cause">
+          <div class="cause-cont" id="cause-container">
+            <label for="cause">Cause :</label>
+            <input
+              type="text"
+              name="cause"
+              id="cause"
+              placeholder="Please enter the cause"
+            />
+            <button class="btn" type="button">+</button>
+          </div>
+        </div>
+
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
