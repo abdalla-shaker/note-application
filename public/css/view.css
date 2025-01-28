@@ -1,0 +1,36 @@
+main {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-top: 9.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 3.2rem;
+}
+
+.main-list {
+  list-style: none;
+  margin-left: 16rem;
+}
+
+.main-list-item {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+main {
+  background-size: 350px 500px;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: unset;
+  background: unset;
+}
